@@ -1,0 +1,162 @@
+/* Hiệu ứng card mạng xã hội giống dự án */
+.social-card {
+    background: #101522;
+    border: 1.5px solid #1976d2;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
+    transition: transform 0.15s, box-shadow 0.15s;
+    color: #fff;
+}
+.social-card:hover {
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0 6px 32px rgba(25, 118, 210, 0.18);
+    z-index: 2;
+    color: #fff;
+}
+.social-card i {
+    transition: color 0.18s, transform 0.18s;
+}
+.social-card:hover i {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+/*
+    style.css - CSS tuỳ chỉnh cho Portfolio cá nhân
+    Sử dụng font Poppins, tối ưu responsive, dễ bảo trì
+*/
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #101522;
+    color: #fff;
+}
+
+
+h2, .navbar-brand {
+    font-weight: 600;
+    color: #1976d2;
+}
+
+
+.navbar {
+    font-size: 1.1rem;
+    background: #181c2a !important;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+}
+
+.navbar-brand {
+    color: #1976d2 !important;
+}
+
+.nav-link {
+    color: #e9ecef !important;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #fff !important;
+    background: #1976d2;
+}
+
+section {
+    scroll-margin-top: 80px; /* Đảm bảo cuộn tới đúng vị trí khi click nav */
+    border-radius: 16px;
+    box-shadow: 0 2px 24px rgba(25, 118, 210, 0.10);
+    border: 1.5px solid #222b3a;
+    background: #181c2a;
+    padding: 2.5rem 0;
+    margin-bottom: 2.5rem;
+    color: #fff;
+}
+
+
+.card {
+    background: #101522;
+    border: 1.5px solid #1976d2;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 32px rgba(25, 118, 210, 0.18);
+}
+.card-title {
+    font-weight: 600;
+    color: #1976d2;
+}
+.card, .card-body, .card-text, .card-title {
+    color: #fff;
+}
+
+
+footer {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    background: #181c2a !important;
+    border-radius: 16px 16px 0 0;
+    border-top: 2px solid #1976d2;
+}
+
+/* Responsive cho ảnh About */
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2.5px solid #1976d2;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.12);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.profile-img:hover {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 6px 32px rgba(25, 118, 210, 0.22);
+    z-index: 2;
+}
+
+/* Tối ưu list kỹ năng */
+
+#skills .list-group-item {
+    background: #181c2a;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    border: 1.5px solid #1976d2;
+    margin: 0.2rem 0.4rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+#skills .list-group-item:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #1976d2;
+    }
+    section {
+        padding: 1.2rem 0.2rem;
+        border-radius: 10px;
+        color: #fff;
+    }
+    #skills .list-group-item {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.7rem;
+        color: #fff;
+    }
+}
