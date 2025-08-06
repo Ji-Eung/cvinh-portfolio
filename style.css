@@ -30,6 +30,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #101522;
     color: #fff;
+    padding-top: 80px; /* Tạo khoảng cách cho fixed navbar */
 }
 
 
@@ -44,6 +45,10 @@ h2, .navbar-brand {
     background: #181c2a !important;
     border-radius: 0 0 16px 16px;
     box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
 }
 
 .navbar-brand {
